@@ -1,0 +1,22 @@
+.u-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 5px;
+}
+
+.u-button-primary {
+  background-color: blue;
+  color: white;
+}
+
+.u-button-success {
+  background-color: green;
+  color: white;
+}
