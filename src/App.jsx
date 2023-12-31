@@ -12,6 +12,7 @@ function App() {
         <p>count = {count}</p>
         <Button label="Create New Task" variant={'success'} type={'submit'} handleClick={()=> setCount(count + 1)}/>
         <Button label="Cancel" variant={'primary'} type={'submit'}  handleClick={()=> setCount(count - 1)}/>
+        <Button label="Reset" variant={'danger'} type={'submit'}  handleClick={()=> setCount(0)}/>
       </div>
     </>
   )

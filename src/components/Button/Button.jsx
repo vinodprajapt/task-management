@@ -11,6 +11,7 @@ const Button = (props) => {
           "u-button": true,
           "u-button-primary": variant === "primary",
           "u-button-success": variant === "success",
+          "u-button-danger": variant === "danger",
           [additionalClasses] : !!additionalClasses
         })}
         onClick={(event) => handleClick(event)}
