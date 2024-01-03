@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import "./style.css";
+import  "./style.css";
 const Button = (props) => {
   const { type, variant, label, handleClick, additionalClasses } = props;
   return (
     <>
       <button
+      style={{ color: 'white'}}
         type={type ?? "button"}
         className={classNames({
           "u-button": true,
