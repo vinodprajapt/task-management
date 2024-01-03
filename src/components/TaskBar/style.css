@@ -1,0 +1,12 @@
+.taskbar {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.taskbar .card:nth-last-child(2) {
+    margin-left: 20px;
+}
+.taskbar .card:last-child {
+    margin-left: 20px;
+}
