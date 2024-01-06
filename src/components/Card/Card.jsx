@@ -14,28 +14,28 @@ const Card = (props) => {
       <div className="card-header">
         <h2>{label}</h2>
         {type === "todo" &&(
-          <Button variant="primary" onClick={()=>setShow(!show)}>
+          <Button className="bg-success border-secondary" variant="primary" onClick={()=>setShow(!show)}>
             Add new Task{" "}
           </Button>
         )}
       </div>
       <div className="task">
-        <span className="title">Hello</span>
+        <span className="title">TODO</span>
         <p className="description">this is my first task</p>
       </div>
       <div className="task">
-        <span className="title">Hello</span>
+        <span className="title">In Progress</span>
         <p className="description">this is my first task</p>
       </div>
       <div className="task">
-        <span className="title">Hello</span>
+        <span className="title">Done</span>
         <p className="description">this is my first task</p>
       </div>
     </div>
     
       {/* Modal  */}
       <Modal show={show} onHide={() => setShow(!show)}>
-        <Modal.Header closeButton>
+        <Modal.Header className="bg-secondary" closeButton>
           <Modal.Title>Heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -45,20 +45,20 @@ const Card = (props) => {
               <Form.Control
                 type="email"
                 placeholder="Enter task Title"
-                autoFocus
+                autoFocus 
               />
             </Form.Group>
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>task Discription</Form.Label>
+              <Form.Label>Task Discription</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Enter task Discription" />
             </Form.Group>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-        <Button variant="secondary" onClick={() => setShow(!show)}>
+        <Modal.Footer className="bg-secondary">
+        <Button  className="border-black bg-dark"variant="secondary" onClick={() => setShow(!show)}>
             Close
           </Button>
           <Button variant="primary" onClick={() => setShow(!show)}>
