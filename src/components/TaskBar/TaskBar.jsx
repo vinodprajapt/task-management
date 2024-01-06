@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import './style.css';
+import "./style.css";
 
 const TaskBar = () => {
   const taskTypes = [
@@ -19,7 +19,7 @@ const TaskBar = () => {
   return (
     <div className="taskbar">
       {taskTypes.map((item) => {
-        return <Card key={item} type={item.type} label={item.label}/>;
+        return <Card key={item} type={item.type} label={item.label} />;
       })}
     </div>
   );
